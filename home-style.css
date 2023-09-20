@@ -35,7 +35,7 @@ header{
 
 .img-header img{
     width: 12vw;
-    margin: 1vh 11vh;
+    margin: 0.3vh 11vh;
 }
 
 .right-header{
@@ -51,3 +51,26 @@ header{
     margin: -0.7vh 0 0 3.5vh;
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh 0;
+    padding: 1.5vh;
+    width: 100%;
+    background-color: var(--orange);
+}
+
+.left-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.option-nav a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.right-nav{
+    margin: auto 3.8vw;
+}
