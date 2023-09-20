@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;  
-    
+    outline: #ff4700 2px solid;
 }
 
 @font-face {
@@ -23,7 +23,59 @@
     --lightorange: #ffa37f;
 }
 
+/* Body Oli */
 
 
+.BoxForm {
+    background-image: url(../img/photo\ \(3\).jpg);
+    margin-top: 2vh;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.BoxForm-tittle{
+    background-color: #ffa37f;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    height: 5vw;
+    width: 50vw;
+    font-family: 'rubik';
+
+}
+
+.BoxFrom-question1 {
+    background-color: #ffa37f;
+    border-radius: 0em 0em 1em 0em;
+    padding: 1em;
+    width: 80vw;
+}
+
+.BoxFrom-question2 {
+    background-color: #ffa37f;
+    border-radius: 0em 0em 1em 0em;
+    padding: 1em;
+    width: 80vw;
+}
+
+.BoxFrom-question3 {
+    background-color: #ffa37f;
+    border-radius: 0em 0em 1em 0em;
+    padding: 1em;
+    width: 80vw;
+}
+
+checkbox {
+    border-radius: 50%;
+}
 
 
