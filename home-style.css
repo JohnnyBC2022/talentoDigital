@@ -23,6 +23,22 @@
     --lightorange: #ffa37f;
 }
 
+.Principal-introduccion{
+    background-color: white;
+
+}
+
+.title-card{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+
 
 
 
