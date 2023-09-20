@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;  
+    
+}
+
+@font-face {
+    font-family: "FiraCode";
+    src: url(../talentoDigital/fonts/FiraCode/FiraCode-VariableFont_wght.ttf);
+    font-family: 'Poppins';
+    src: url(../talentoDigital/fonts/Poppins/Poppins-Regular.ttf);
+    src: url(../talentoDigital/fonts/Poppins/Poppins-Bold.ttf);
+    font-family: 'Rubik';
+    src: url(../talentoDigital/fonts/Rubik/Rubik-VariableFont_wght.ttf);
+    src: url(../talentoDigital/fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf);
+} 
+
+:root{
+    --orange: #ff4700;
+    --black: #020100;
+    --white: #ffffff;
+    --grey: #9c9c9c;
+    --lightorange: #ffa37f;
+}
+
+
+
+
+
