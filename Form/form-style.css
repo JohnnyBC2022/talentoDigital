@@ -25,6 +25,23 @@
 
 /* Body Oli */
 
+.form-name {
+    background-color: #ff4700;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.form-email {
+    background-color: #ff4700;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 10px;
+}
 
 .BoxForm {
     background-image: url(../img/photo\ \(3\).jpg);
@@ -47,27 +64,32 @@
     justify-content: center;
     align-items: center;
     border-radius: 1em;
-    height: 5vw;
-    width: 50vw;
+    padding: 1.8vh;
     font-family: 'rubik';
+    box-shadow: 2px 2px 5px 2px #ff4700 ;
+    
 
 }
 
-.BoxFrom-question1 {
+.BoxForm-tittleFont{
+
+}
+
+.BoxFrom-part1 {
     background-color: #ffa37f;
     border-radius: 0em 0em 1em 0em;
     padding: 1em;
     width: 80vw;
 }
 
-.BoxFrom-question2 {
+.BoxFrom-part2 {
     background-color: #ffa37f;
     border-radius: 0em 0em 1em 0em;
     padding: 1em;
     width: 80vw;
 }
 
-.BoxFrom-question3 {
+.BoxFrom-part3 {
     background-color: #ffa37f;
     border-radius: 0em 0em 1em 0em;
     padding: 1em;
@@ -78,4 +100,25 @@ checkbox {
     border-radius: 50%;
 }
 
+.BoxFrom-Button {
+    color: #ffffff;
+    background-color: #ff4700;
+    padding: 5px;
+}
+
+.BoxForm-tittleFont p {
+    font-size: 1.8vh;
+}
+
+@media (max-width: 900px) {
+    .BoxForm-tittleFont {
+        display: flex;
+        justify-content: center;
+        height: 2vw;
+    }
+
+    /* .BoxForm-tittleFont p {
+        font-size: 2vw;
+    } */
+}
 
