@@ -22,8 +22,75 @@
     --grey: #9c9c9c;
     --lightorange: #ffa37f;
 }
+.allphotosandtext{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5vh;
+}
 
+.photo1{
+    width: 15vh ; 
+}
+.photo2{
+    width: 12vh;
+}
+.photo3{
+    width: 23vh;
+}
+.photo4{
+    width: 20vh;
+}
+.photo5 {
+    width: 25vh;
+}
+.downtext{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5vh;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+p {
+    line-height: 1;
+  }
+  
+  a {
+    outline: none;
+    text-decoration: none;
+    padding: 1px 1px 0;
+  }
+  
+  a:link {
+    color: var(--blacke);
+  }
+  
+  a:visited {
+    color: var(--black);
+  }
+  
+  a:focus {
+    border-bottom: 1px;
+  }
+  
+  a:hover {
+    border-bottom: 1px;
+    color: var(--orange);
+  }
+  
+  a:active {
+    color: var(--black);
+  }
+@media (max-width: 1030px){
+  .allphotosandtext{
+    flex-direction: column;
 
-
-
-
+  }
+  
+.downtext{
+  flex-direction: column;
+  gap: 10px;
+}
+}
