@@ -1,13 +1,35 @@
 *{
     margin: 0;
-    padding: 0;  
-    
+    padding: 0; 
+    font-family: Poppins-Regular, 'sans-serif', 'arial';      
+}
+
+ 
+@font-face {
+    font-family: 'Firacode';
+    src: url(./Fonts/FiraCode-VariableFont_wght.ttf) ;
 }
 
 @font-face {
-    font-family: "FiraCode";
-    src: url(./fonts/FiraCode/FiraCode-VariableFont_wght.ttf);
-} 
+    font-family: 'Poppins-Regular';
+    src: url(./Fonts/Poppins-Regular.ttf) ;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(./Fonts/Poppins-ExtraBold.ttf) ;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url(./Fonts/Rubik-VariableFont_wght.ttf) ;
+}
+
+@font-face {
+    font-family: 'Rubik-italic';
+    src: url(./Fonts/Rubik-Italic-VariableFont_wght.ttf)
+}
+    
 @font-face {
     font-family: "Poppins";
     src: url(./fonts/Poppins/Poppins-Medium.ttf);
