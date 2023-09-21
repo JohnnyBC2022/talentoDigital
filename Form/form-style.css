@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;  
-    outline: #ff4700 2px solid;
+    /* outline: #ff4700 2px solid; */
 }
 
 @font-face {
@@ -25,26 +25,47 @@
 
 /* Body Oli */
 
+input {
+    margin-right: $ruler/2;
+    box-shadow:  inset 2px 2px 5px #ffffff, }
+
 .form-name {
-    background-color: #ff4700;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 2px;
+    background-color: var(--lightorange);
+    border: 0;
+    color: var(--white);
+    padding: 1vh;
+    font-size: 3vh;
     border-radius: 10px;
+    text-shadow: 2px 2px 2px var(--orange);
+    box-shadow: 2px 2px 0px 0px #020100;
+
+
 }
 
 .form-email {
-    background-color: #ff4700;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 2px;
+    background-color: var(--lightorange);
+    border: 0;
+    color: var(--white);
+    padding: 1vh;
+    font-size: 3vh;
     border-radius: 10px;
+    text-shadow: 2px 2px 2px var(--orange);
+    box-shadow: 2px 2px 0px 0px #020100;
 }
 
 .BoxForm {
     background-image: url(../img/photo\ \(3\).jpg);
+    margin-top: 2vh;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.BoxForm2 {
+
     margin-top: 2vh;
     padding: 2vh;
     display: flex;
@@ -66,20 +87,17 @@
     border-radius: 1em;
     padding: 1.8vh;
     font-family: 'rubik';
-    box-shadow: 2px 2px 5px 2px #ff4700 ;
+    box-shadow: 4px 4px 0px 0px #020100;
     
 
 }
 
-/* .BoxForm-tittleFont{
-
-} */
-
 .BoxFrom-part1 {
     background-color: #ffa37f;
-    border-radius: 0em 0em 1em 0em;
+    border-radius: 0em 1em 1em 0em;
     padding: 1em;
     width: 80vw;
+    box-shadow: 7px 7px 0px 0px #020100;
 }
 
 .BoxFrom-part2 {
@@ -87,9 +105,18 @@
     border-radius: 0em 0em 1em 0em;
     padding: 1em;
     width: 80vw;
+    box-shadow: 7px 7px 0px 0px #020100;
 }
 
 .BoxFrom-part3 {
+    background-color: #ffa37f;
+    border-radius: 0em 0em 1em 0em;
+    padding: 1em;
+    width: 80vw;
+    box-shadow: 7px 7px 0px 0px #020100;
+}
+
+.BoxFrom-part4 {
     background-color: #ffa37f;
     border-radius: 0em 0em 1em 0em;
     padding: 1em;
@@ -101,7 +128,7 @@ checkbox {
 }
 
 .BoxFrom-Button {
-    color: #ffffff;
+    color: var(--white);
     background-color: #ff4700;
     padding: 5px;
 }
