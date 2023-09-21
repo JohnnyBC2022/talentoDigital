@@ -23,6 +23,19 @@
     --lightorange: #ffa37f;
 }
 
+.Principal-introduccion{
+    background-color: var(--grey);
+    justify-content: center;
+    
+}
+
+.card{
+border: 1px 1px 1px 1px;
+ padding: 20px;
+ height: 100vh;
+ width: 30vw;
+}
+
 
 
 
