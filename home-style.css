@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0; 
-    font-family: Poppins-Regular, 'sans-serif', 'arial';     
+    font-family: Poppins-Regular, 'sans-serif', 'arial';      
 }
 
  
@@ -40,18 +40,15 @@
 
 
 .poppins{
-    font-family: Poppins;    
-    font-size: 100px;
+    font-family: Poppins; 
 }
 
-.code{
+.firacode{
     font-family: Firacode;    
-    font-size: 100px;
 }
 
 .rubik{
-    font-family: Rubik;    
-    font-size: 100px;
+    font-family: Rubik;     
 }
 
 
