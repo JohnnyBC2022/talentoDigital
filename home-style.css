@@ -57,7 +57,7 @@ nav{
     display: flex;
     justify-content: space-between;
     margin: 2vh 0;
-    padding: 1.5vh;
+    padding: 1.5vh 0;
     width: 100%;
     background-color: var(--orange);
 }
@@ -86,7 +86,7 @@ nav{
 }
 
 .right-nav{
-    margin: auto 3.8vw;
+    margin: auto 2.8vw;
 }
 
 @keyframes lineaAnimada {
@@ -109,30 +109,11 @@ nav{
     
     .img-header img{
         width: 60%;
-    }
-
-    .title-header{
-        font-size: 3.8vw;
-    }
-
-    nav{
-        margin: -5px 0;
-    }
-
-    .left-nav{
-        width: 70%;
-    }
-}
-
-@media(max-width: 950px){
-    
-    .img-header img{
         margin: 1.3vh 2.5vh;
     }
-    
+
     .right-header{
         width: 75%;
-        border-radius: 50vh 0 0 0;
         height: 60%;
     }
 
@@ -152,5 +133,42 @@ nav{
 @media(max-width: 700px){
     .left-nav{
         width: 100%;
+    }
+}
+
+@media(max-width: 550px){
+    .img-header img{
+        width: 75%;
+        margin: 1.3vh 1.8vh;
+    }
+
+    .option-nav{
+        font-size: small;
+    }
+}
+
+@media(max-width: 450px){
+    .img-header img{
+        width: 75%;
+        margin: 0.8vh 1.5vh;
+    }
+    
+    .right-header{
+        width: 75%;
+        height: 45%;
+    }
+
+    .title-header{
+        font-size: 4vw;
+        margin-left: 2vh;
+    }
+
+    nav{
+        margin: -4.5vh 0;
+        padding: 1vh 0;
+    }
+
+    .option-nav{
+        font-size: x-small;
     }
 }
