@@ -1,20 +1,35 @@
 *{
     margin: 0;
-    padding: 0;  
-    
+    padding: 0; 
+    font-family: Poppins-Regular, 'sans-serif', 'arial';      
+}
+
+ 
+@font-face {
+    font-family: 'Firacode';
+    src: url(./Fonts/FiraCode-VariableFont_wght.ttf) ;
 }
 
 @font-face {
-    font-family: "FiraCode";
-    src: url(../talentoDigital/fonts/FiraCode/FiraCode-VariableFont_wght.ttf);
-    font-family: 'Poppins';
-    src: url(../talentoDigital/fonts/Poppins/Poppins-Regular.ttf);
-    src: url(../talentoDigital/fonts/Poppins/Poppins-Bold.ttf);
-    font-family: 'Rubik';
-    src: url(../talentoDigital/fonts/Rubik/Rubik-VariableFont_wght.ttf);
-    src: url(../talentoDigital/fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf);
-} 
+    font-family: 'Poppins-Regular';
+    src: url(./Fonts/Poppins-Regular.ttf) ;
+}
 
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(./Fonts/Poppins-ExtraBold.ttf) ;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url(./Fonts/Rubik-VariableFont_wght.ttf) ;
+}
+
+@font-face {
+    font-family: 'Rubik-italic';
+    src: url(./Fonts/Rubik-Italic-VariableFont_wght.ttf)
+}
+    
 :root{
     --orange: #ff4700;
     --black: #020100;
@@ -23,7 +38,62 @@
     --lightorange: #ffa37f;
 }
 
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/photo\ \(8\).jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
 
+}
 
+.main-box{
+    width: 60%;
+    height: 50%;
+    background-color: var(--orange);
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5vh;
+}
 
+.main-h2{
+    width: calc(80%);
+    color: var(--white);
+    text-align: center;    
+    font-size: 5vh;
+    
+}
 
+.main-btn{
+    background-color: var(--lightorange);
+    border: 0;
+    color: var(--white);
+    padding: 2vh 3vh;
+    font-size: 3vh;
+    border-radius: 10px;
+    text-shadow: 2px 2px 2px var(--orange);
+    
+}
+
+.main-btn:hover{
+    box-shadow: 1px 1px 10px 5px var(--white);
+
+}
+
+@media (max-width: 600px) {
+    .main-box{
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-box{
+        width: 70%;
+    }
+}
