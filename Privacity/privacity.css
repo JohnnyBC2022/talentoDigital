@@ -86,9 +86,13 @@ header{
 h1{
     font-size: 10vh;
     margin: 5vh;
+    color: var(--orange);
 }
 p{
     font-size: 3vh;
+    margin: 3vh;
+}
+h3{
     margin: 3vh;
 }
 .h2privacity{
@@ -142,6 +146,12 @@ p{
         margin-left: 2vh;
     }
 }
+.alltext{
+    margin-right: 10vh ;
+    margin-left: 10vh;
+  
+
+}
 .allphotosandtext{
     display: flex;
     justify-content: space-around;
@@ -172,11 +182,11 @@ p {
   }
   
   a:link {
-    color: var(--blacke);
+    color: var(--black);
   }
   
   a:visited {
-    color: var(--black);
+    color: var(--white);
   }
   
   a:focus {
@@ -185,11 +195,14 @@ p {
   
   a:hover {
     border-bottom: 1px;
-    color: var(--white);
+    color: var(--black);
   }
   
   a:active {
-    color: var(--black);
+    color: var(--white);
+  }
+  .copy{
+    color: var(--white);
   }
 @media (max-width: 1030px){
   .allphotosandtext{
