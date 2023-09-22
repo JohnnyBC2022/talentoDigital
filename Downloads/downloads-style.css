@@ -23,7 +23,133 @@
     --lightorange: #ffa37f;
 }
 
+.main_download{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image:linear-gradient(rgba(235,229,227,0.8),
+    #f8f8f82e),url(../img/photo\ \(8\).jpg); 
+    background-size: cover;   
+    height: 80vh;
+    
+    
+    }
+.box_left{
+    width: 50vh;
+    height: 50vh;
+    background-color: #ffa37f;
+    border-color: #ff4700;
+    border-width: 2px;
+    border-style:solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 3px 3px 3px 0px grey;
+    
+}
+.box_right{
+    width: 50vh;
+    height: 50vh;
+    background-color: #ffa37f;
+    border-width: 2px;
+    border-style:solid;
+    border-color:#ff4700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 3px 3px 3px 0px grey;
+    
+    
+}
+
+.icon_left img{
+    height: 8vh;
+    
+    
+}
+.icon_right img{
+    height: 8vh;
+    
+    
+}
+.icon_right{
+    padding-top: 23%;
+}
+.icon_left{
+    padding-top: 25%;
+    
+}
+
+.tittle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.tittleH2{
+    color: #ffffff;
+    -webkit-text-stroke: rgba(255, 98, 0, 0.797) 0.5px; 
+    font-size: 8vh;
+    text-shadow: rgb(98, 98, 98) 5px 5px 5px 0px;
+    
+}
+.tittle_right{
+    color: #ffffff;
+    -webkit-text-stroke: rgba(255, 98, 0, 0.797) 0.5px;
+    display: flex;
+    justify-content: center;
+    font-size: 4vh;
+    
+}
+.tittle_right h1{
+    text-shadow: black 5px 5px 5px 0px;
+}
+
+.line_right{
+
+    width: 40vh;
+    
+}
+
+.line_left{
+    width: 17vh;
+
+}
 
 
+@media (max-width: 1200px){
+    .main_download{
+        display: flex;
+        flex-direction: column;
+        
+    }    
+    .box_left{
+        margin-bottom: 10vh;
+    }
+
+}
 
 
+@media (max-width:600px){
+    .box_left{
+        width: 70vw;
+        height: 30vh;
+    }
+    
+    .box_right{
+        width: 70vw;
+        height: 30vh;
+
+    }
+
+.tittle_right{
+    font-size: 7vw;
+    
+}
+.line_right{
+    width: 55vw;
+}
+}
