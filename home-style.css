@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0; 
     font-family: Poppins-Regular, 'sans-serif', 'arial';      
@@ -35,12 +35,12 @@
     src: url(./fonts/Poppins/Poppins-Medium.ttf);
 } 
 
-:root{
+:root {
     --orange: #ff4700;
     --black: #020100;
     --white: #ffffff;
     --grey: #9c9c9c;
-    --lightorange: #ffa37f;
+    --lightorange: #ff7c48;
 }
 
 header{
