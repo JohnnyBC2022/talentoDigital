@@ -176,7 +176,7 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center
+    justify-content:center;
 }
 
 .direction, .social-media{
@@ -231,6 +231,36 @@ nav{
     .separator{
         margin-top: 4.4vh;
     }
+
+    .content-main{
+        width: 70%;
+    }
+
+    .text-map{
+        font-size: small;
+    }
+
+    .map{
+        width: 25vh;
+        height: 25vh;
+    }
+
+    .right-content{
+        font-size: small;
+    }
+
+    .direction, .social-media{
+        width: 100%;
+    }
+
+    .social-inline{
+        font-size: x-small;
+    }
+    
+    .social-img{
+        width: 2vh;
+        height: 2vh;
+    }
 }
 
 @media(max-width: 700px){
@@ -265,6 +295,10 @@ nav{
     .separator-text{
         font-size: small;
         
+    }
+
+    .content-main{
+        width: 100%;
     }
 }
 
