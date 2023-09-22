@@ -72,13 +72,17 @@ header{
     padding: 5px;
     background-color: var(--lightorange);
     margin-top: 50px;
+    margin-bottom: 10vh;
     border-radius: 20px;
+    box-shadow: 2px 2px 0px 0px#000000;
 }
 .card{
     text-align: center;
     color: var(--white);
     margin: 5vh;
     text-align: justify;
+
+
 
 }
 .title-card{
