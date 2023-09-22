@@ -206,9 +206,9 @@ checkbox {
 .BoxFrom-Button {
     align-items: center;
     background-image: linear-gradient(144deg, #ff4700 , #ffa37f 50%,#ff4700);
-    border: 0;
+    border: 1;
     border-radius: 8px;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-shadow: 3px 3px 0px 0px #020100;
     box-sizing: border-box;
     color: #FFFFFF;
     display: flex;
@@ -217,7 +217,7 @@ checkbox {
     line-height: 1em;
     max-width: 100%;
     min-width: 140px;
-    padding: 3px;
+    padding: 10px;
     text-decoration: none;
     user-select: none;
     -webkit-user-select: none;
