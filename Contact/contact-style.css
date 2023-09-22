@@ -241,8 +241,8 @@ nav{
     }
 
     .map{
-        width: 25vh;
-        height: 25vh;
+        width: 20vh;
+        height: 20vh;
     }
 
     .right-content{
@@ -298,7 +298,7 @@ nav{
     }
 
     .content-main{
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -334,8 +334,16 @@ nav{
     .separator-background{
         height: 10vh;
     }
-    
-    .separator-text{
+
+    .text-map{
         font-size: x-small;
+    }
+
+    .right-content{
+        font-size: x-small;
+    }
+
+    .social-inline{
+        font-size: xx-small;
     }
 }
