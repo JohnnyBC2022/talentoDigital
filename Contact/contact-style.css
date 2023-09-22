@@ -193,6 +193,11 @@ nav{
     margin: 0.5vh;
 }
 
+.social-inline a{
+    text-decoration: none;
+    color: #000000;
+}
+
 .social-img{
     margin-right: 2vh;
 }
