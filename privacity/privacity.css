@@ -229,3 +229,13 @@ a:active {
     text-align: center;
 }
 }
+
+@media (max-width: 1030px){
+    .allphotosandtext{
+      flex-direction: column;
+    }
+  .downtext{
+    flex-direction: column;
+    gap: 10px;
+  }
+  }
