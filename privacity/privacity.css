@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    font-family: Poppins-Regular, 'sans-serif', 'arial';      
+    text-align: justify;
+} 
+
+ 
+@font-face {
+    font-family: 'Firacode';
+    src: url(../Fonts/FiraCode-VariableFont_wght.ttf) ;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../Fonts/Poppins-Regular.ttf) ;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(../Fonts/Poppins-ExtraBold.ttf) ;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url(../Fonts/Rubik-VariableFont_wght.ttf) ;
+}
+
+@font-face {
+    font-family: 'Rubik-italic';
+    src: url(../Fonts/Rubik-Italic-VariableFont_wght.ttf)
+}
+
+@font-face {
+    font-family: "FiraCode";
+    src: url(../talentoDigital/fonts/FiraCode/FiraCode-VariableFont_wght.ttf);
+    font-family: 'Poppins';
+    src: url(../talentoDigital/fonts/Poppins/Poppins-Regular.ttf);
+    src: url(../talentoDigital/fonts/Poppins/Poppins-Bold.ttf);
+    font-family: 'Rubik';
+    src: url(../talentoDigital/fonts/Rubik/Rubik-VariableFont_wght.ttf);
+    src: url(../talentoDigital/fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf);
+} 
+
+:root{
+    --orange: #ff4700;
+    --black: #020100;
+    --white: #ffffff;
+    --grey: #9c9c9c;
+    --lightorange: #ffa37f;
+}
+header{
+    display: flex;
+    margin: 5px 0;
+    height: 10vh;
+    width: 100%;
+}
+
+.left-header{
+    width: 25%;
+}
+
+.img-header img{
+    width: 50%;
+    margin: auto 10vh;
+}
+
+.right-header{
+    width: 75%;
+    background-color: var(--orange);
+    border-radius: 50vh 0 0 0;
+}
+
+.title-header{
+    color: var(--white);
+    text-align: center;
+    font-size: 3.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.photo1{
+    width: 35vh;
+    margin: 5vh;
+}
+.aviso {
+    font-size: 10vh;
+    margin: 5vh;
+    color: var(--orange);
+}
+p{
+    font-size: 3vh;
+    margin: 3vh;
+    word-wrap: break-word;
+    line-height: 1;
+}
+.h3fonts{
+    margin: 3vh;
+}
+.h2fonts{
+    font-size: 6.5vh;
+    margin: 5vh;
+    color: var(--orange);
+    
+}
+
+.alltext{
+    margin-right: 10vh ;
+    margin-left: 10vh;
+  
+
+}
+.allphotosandtext{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5vh;
+    background-color: var(--grey);
+}
+
+.downtext{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5vh 0 0 0;
+    background-color: var(--orange);
+    width: 100%;
+    height: 10vh;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    padding: 1px 1px 0;
+}
+  
+a:link{
+    color: var(--black);
+}
+  
+a:visited {
+    color: var(--white);
+  }
+  
+a:focus {
+    border-bottom: 1px;
+}
+  
+a:hover {
+    border-bottom: 1px;
+    color: var(--black);
+}
+  
+a:active {
+    color: var(--white);
+}
+
+.copy{
+    color: var(--white);
+}
+
+@media(max-width: 1150px){
+    .img-header img{
+        width: 75%;
+        margin: 1vh 3vh;
+    }
+
+    .allphotosandtext{
+        flex-direction: column;
+    
+      }
+      
+    .downtext{
+      flex-direction: column;
+      gap: 10px;
+    }
+}
+
+@media(max-width: 950px){
+    
+    .img-header img{
+        width: 60%;
+        margin: 1.3vh 2.5vh;
+    }
+
+    .right-header{
+        width: 75%;
+        height: 60%;
+    }
+
+    .title-header{
+        font-size: 3.8vw;
+    }
+}
+
+@media(max-width: 550px){
+    .img-header img{
+        width: 75%;
+        margin: 1.3vh 1.8vh;
+    }
+}
+
+@media(max-width: 450px){
+    .img-header img{
+        width: 75%;
+        margin: 0.8vh 1.5vh;
+    }
+    
+    .right-header{
+        width: 75%;
+        height: 45%;
+    }
+
+    .title-header{
+        font-size: 4vw;
+        margin-left: 2vh;
+    }
+.h2fonts{
+    font-size: 5vh;
+    text-align: center;
+}
+.aviso {
+    font-size: 7vh;
+}
+.h3fonts{
+    text-align: center;
+}
+}
