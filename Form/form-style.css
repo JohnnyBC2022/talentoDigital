@@ -230,7 +230,14 @@ checkbox {
     box-shadow: 1px 1px 10px 5px var(--white);
 }
   
+.zoom {
+    transition: transform 0.3s; 
+    cursor: pointer;
+}
 
+.zoom:hover {
+    transform: scale(1.20);
+}
 
 
 .BoxForm-tittleFont p {
