@@ -35,7 +35,112 @@
     --black: #020100;
     --white: #ffffff;
     --grey: #9c9c9c;
-    --lightorange: #ffa37f;
+    --lightorange: #ff7c48;
+}
+
+header{
+    display: flex;
+    margin: 5px 0;
+    height: 10vh;
+    width: 100%;
+}
+
+.left-header{
+    width: 25%;
+}
+
+.img-header img{
+    width: 50%;
+    margin: auto 10vh;
+}
+
+.right-header{
+    width: 75%;
+    background-color: var(--orange);
+    border-radius: 50vh 0 0 0;
+}
+
+.title-header{
+    color: var(--white);
+    text-align: center;
+    font-size: 3.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh 0;
+    padding: 1.5vh 0;
+    width: 100%;
+    background-color: var(--orange);
+}
+
+.left-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.option-nav a{
+    text-decoration: none;
+    color: var(--white);
+    position: relative;
+}
+
+.option-nav a:hover::after{
+        content: "";
+        position: absolute;
+        bottom: 2;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        animation: lineaAnimada 3s linear infinite;
+}
+
+.right-nav{
+    margin: auto 2.8vw;
+}
+
+@keyframes lineaAnimada {
+    0%, 100% {
+        transform: scaleX(0);
+    }
+    50% {
+        transform: scaleX(1);
+    }
+}
+
+.separator{
+    margin: 2vh 0;
+}
+
+.separator-background{
+    background-image:
+    linear-gradient(rgb(255, 71, 0, 0.5),
+    rgb(255, 71, 0, 0.3)),
+    url(../img/istockphoto-820219934-170667a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+}
+
+.separator-text{
+    color: var(--white);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    text-align: center;
+}
+
+.separator-text h2{
+    text-shadow:  #000000 1px 0 15px;
 }
 
 /* Body Oli */
@@ -244,15 +349,46 @@ checkbox {
     font-size: 2.8vh;
 }
 
-@media (max-width: 950px) {
+@media(max-width: 1150px){
+    .img-header img{
+        width: 60%;
+        margin: 0.8vh 7vh;
+    }
+}
+
+@media(max-width: 950px){
+    
+    .img-header img{
+        width: 60%;
+        margin: 1.3vh 2.5vh;
+    }
+
+    .right-header{
+        width: 75%;
+        height: 60%;
+    }
+
+    .title-header{
+        font-size: 3.8vw;
+    }
+
+    nav{
+        margin: -3vh 0;
+    }
+
+    .left-nav{
+        width: 70%;
+    }
+
+    .separator{
+        margin-top: 4.4vh;
+    }
     .BoxForm-tittleFont {
         display: flex;
         justify-content: center;
         flex-direction: column;
         padding: 1em;
     }
-
-
 
     .BoxForm-instruction p {
         display: flex;
@@ -263,3 +399,75 @@ checkbox {
     }
 }
 
+@media(max-width: 700px){
+    .left-nav{
+        width: 100%;
+    }
+
+    .separator-background{
+        height: 15vh;
+    }
+    
+    .separator-text{
+        font-size: medium;
+        
+    }
+}
+
+@media(max-width: 550px){
+    .img-header img{
+        width: 75%;
+        margin: 1vh 1.8vh;
+    }
+
+    .option-nav{
+        font-size: small;
+    }
+
+    .separator-background{
+        height: 12vh;
+    }
+    
+    .separator-text{
+        font-size: small;
+        
+    }
+}
+
+@media(max-width: 450px){
+    .img-header img{
+        width: 75%;
+        margin: 0.8vh 1.5vh;
+    }
+
+    .right-header{
+        width: 75%;
+        height: 45%;
+    }
+
+    .title-header{
+        font-size: 4vw;
+        margin-left: 2vh;
+    }
+
+    nav{
+        margin: -4.5vh 0;
+        padding: 1vh 0;
+    }
+
+    .option-nav{
+        font-size: x-small;
+    }
+
+    .separator{
+        margin-top: 6vh;
+    }
+
+    .separator-background{
+        height: 10vh;
+    }
+    
+    .separator-text{
+        font-size: x-small;
+    }
+}
