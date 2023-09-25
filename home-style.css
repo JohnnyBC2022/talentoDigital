@@ -39,30 +39,31 @@
     --lightorange: #ffa37f;
 }
 
-.main{
-    width: 100vw;
-    height: 100vh;      
+ .main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     
-}
+} 
 
 .container-top{
     background-image: url(./img/B-APRENDE-IMAGEN-1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;   
-    height: 85%;
-    width: 100%;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;  
+    height: 85vh;
+   
+   
     
 }
 
 .main-box{
-    width: 40%;
-    height: 40%;
+    max-width: 40%;
+    /* height: 40%; */
     background-color: var(--orange);
-    margin-top: 10vh;
-    margin-left: 55vh;
+    margin-top: 10vh; 
+    margin-left: 25vw;
     border-radius: 10px;
     box-shadow: 4px 4px 0px var(--black);
     display: flex;
@@ -70,11 +71,12 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 5vh;
+    gap: 5vh; 
+    
 }
 
 .main-h2{
-    width: calc(80%);
+    margin: 2vh 3vh;
     color: var(--white);
     text-align: center;    
     font-size: 5vh;
@@ -83,6 +85,7 @@
 }
 
 .main-btn{
+    display: inline-block;
     background-image: linear-gradient(144deg, var(--orange), var(--lightorange) 50%, var(--orange));
     box-sizing: border-box;
     border: 1;
@@ -93,6 +96,8 @@
     text-shadow: 2px 2px 2px var(--orange);
     box-shadow: 2px 2px var(--black);
     z-index: -1;
+    width: calc(100%);
+    margin-bottom: 20px;
 }
 
 .main-btn:hover{
@@ -102,14 +107,14 @@
 
 .container-bottom{
     margin-top: 2vh; 
-    height: 15%;
+    height: 15vh;
     background-color: var(--orange);    
     display: flex;
     justify-content: center;
     align-items: center;  
 }
 
-.container-bottom h2{
+.container-bottom-h2{
     color: var(--white);
     text-align: center;    
     font-size: 5vh;
@@ -117,6 +122,16 @@
     font-family: Rubik;
 }
 
-
+@media (max-width: 600px){
+    .main-box{
+        max-width: 60%;
+        margin-left: 15vw;
+    }
+    .main-h2, .container-bottom-h2{
+        max-width: 80%;
+        font-size: 3vh;       
+        
+    }
+}
 
  
