@@ -1,12 +1,1609 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="form-style.css">
+    <link rel="stylesheet" href="./form-style.css">
     <title>Talento Digital</title>
 </head>
+
 <body>
-    
+    <!-- Header Noelia -->
+    <!-- Body Oli -->
+    <form class="form" onsubmit="enviarFormulario()" method="POST">
+        <div id="containerForm" class="BoxForm">
+            <br>
+            <p class="form-name">NOMBRE</p>
+            <br>
+            <input class="inputName" placeholder="Escribe aquí tu nombre" type="text" name="name" required>
+            <br>
+            <p class="form-email">EMAIL</p>
+            <br>
+            <input class="inputName" placeholder="Escribe aquí tu e-mail" type="email" name="email" id="emailInput"
+                required>
+            <br>
+            <div class="BoxForm-instruction">
+                <div class="BoxForm-tittleFont">
+                    <p>Instruciones: Rellena éste formulario para descubrir tú "Talento Digital Oculto y Diverso" , recuerda que la primera vez que rellenes este formulario te llegara a tu correo un verificación para poder activar el formulario, ahora sí, vamos a ello!</p>
+                </div>
+            </div>
+            <div class="BoxForm-tittle">
+                <div class="BoxForm-tittleFont">
+                    <p>Competencias digitales básicas</p>
+                </div>
+            </div>
+            <br>
+            <div class="BoxFrom-part1">
+
+                <div class="BoxForm-questionRed">
+                    <p class="BoxForm-BoldTittle">1.1. Tengo curiosidad hacia la tecnología e interés en mantenerme
+                        actualizado</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.1:Si')"  data-group="1" id="1.1:Si" name="1.1: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.1:No')"  data-group="1" id="1.1:No" name="1.1: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.1:Nolotengoclaro')"  data-group="1" id="1.1:Nolotengoclaro" name="1.1: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="BoxForm-questionRed">
+                    <p class="BoxForm-BoldTittle">1.2. Tengo una fuerte motivación para aprender por mí
+                        mismo/a y de forma autodidacta</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.2:Si')"  data-group="2" id="1.2:Si" name="1.2: Si">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.2:No')"  data-group="2" id="1.2:No" name="1.2: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.2:Nolotengoclaro')"  data-group="2" id="1.2:Nolotengoclaro" name="1.2: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="BoxForm-questionOrange">
+                    <p class="BoxForm-BoldTittle">1.3. Dispongo de ordenador propio</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.3:Si')"  data-group="3" id="1.3:Si" name="1.3: Si">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.3:No')"  data-group="3" id="1.3:No" name="1.3: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.3:Nolotengoclaro')"  data-group="3" id="1.3:Nolotengoclaro" name="1.3: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="BoxForm-questionOrange">
+                    <p class="BoxForm-BoldTittle">1.4. Tengo conexión a internet en mi hogar</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.4:Si')"  data-group="4" id="1.4:Si" name="1.4: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.4:No')"  data-group="4" id="1.4:No" name="1.4: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.4:Nolotengoclaro')"  data-group="4" id="1.4:Nolotengoclaro" name="1.4: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="BoxForm-questionOrange">
+                    <p class="BoxForm-BoldTittle">1.5. Tengo correo electrónico y sé utilizarlo</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.5:Si')"  data-group="5" id="1.5:Si" name="1.5: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.5:No')"  data-group="5" id="1.5:No" name="1.5: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.5:Nolotengoclaro')"  data-group="5" id="1.5:Nolotengoclaro" name="1.5: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="BoxForm-questionRed">
+                    <p class="BoxForm-BoldTittle">1.6. Sé hacer búsquedas de información en internet</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.6:Si')"  data-group="6" id="1.6:Si" name="1.6: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.6:No')"  data-group="6" id="1.6:No" name="1.6: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.6:Nolotengoclaro')"  data-group="6" id="1.6:Nolotengoclaro" name="1.6: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="BoxForm-questionGreen">
+                    <p class="BoxForm-BoldTittle">1.7. Tengo algún conocimiento previo sobre programación</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.7:Si')"  data-group="7" id="1.7:Si" name="1.7: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.7:No')"  data-group="7" id="1.7:No" name="1.7: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.7:Nolotengoclaro')"  data-group="7" id="1.7:Nolotengoclaro" name="1.7: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="BoxForm-questionOrange">
+                    <p class="BoxForm-BoldTittle">1.8. Sé hacer gestiones a través de internet (operaciones
+                        bancarias, solicitar documentos, pedir citas electrónicas,
+                        etc.)</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.8:Si')"  data-group="8" id="1.8:Si" name="1.8: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.8:No')"  data-group="8" id="1.8:No" name="1.8: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.8:Nolotengoclaro')"  data-group="8" id="1.8:Nolotengoclaro" name="1.8: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="BoxForm-questionOrange">
+                    <p class="BoxForm-BoldTittle">1.9. Puedo realizar videollamadas</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.9:si')"  data-group="9" id="1.9:si" name="1.9: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.9:No')"  data-group="9" id="1.9:No" name="1.9: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.9:Nolotengoclaro')"  data-group="9" id="1.9:Nolotengoclaro" name="1.9: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="BoxForm-questionOrange">
+                    <p class="BoxForm-BoldTittle">1.10. Sé elaborar mi propio contenido en internet, por
+                        ejemplo, post para blogs, redes sociales, páginas webs.</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.10:si')"  data-group="10" id="1.10:si" name="1.10: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.10:No')"  data-group="10" id="1.10:No" name="1.10: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('1.10:Nolotengoclaro')"  data-group="10" id="1.10:Nolotengoclaro" name="1.10: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="BoxForm-tittle">
+                <div class="BoxForm-tittleFont">
+                    <p>Habilidades personales y motivación</p>
+                </div>
+            </div>
+            <br>
+            <div class="BoxFrom-part2">
+                <div class="BoxForm-questionOrange">
+                    <p class="BoxForm-BoldTittle">2.1. Soy una persona que se preocupa por los demás</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.1: Si')"  data-group="11" id="2.1: Si" name="2.1: Si">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.1:No')"  data-group="11" id="2.1:No" name="2.1: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.1:Nolotengoclaro')"  data-group="11" id="2.1:Nolotengoclaro" name="2.1: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionRed">
+                    <p class="BoxForm-BoldTittle">2.2. Me considero una persona capaz de adaptarme a los
+                        cambios y a diferentes entornos</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.2:Si')"  data-group="12" id="2.2:Si" name="2.2: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.2:No')"  data-group="12" id="2.2:No" name="2.2: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.2:Nolotengoclaro')"  data-group="12" id="2.2:Nolotengoclaro" name="2.2: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionRed">
+                    <p class="BoxForm-BoldTittle">2.3. Soy capaz de tolerar la presión y el estrés</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.3:Si')"  data-group="13" id="2.3:Si" name="2.3: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.3:No')"  data-group="13" id="2.3:No" name="pendient">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.3:Nolotengoclaro')"  data-group="13" id="2.3:Nolotengoclaro" name="pendient">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionRed">
+                    <p class="BoxForm-BoldTittle">2.4. Sé manejar la frustración</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.4:si')"  data-group="14" id="2.4:si" name="2.4: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.4:No')"  data-group="14" id="2.4:No" name="2.4: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.4:Nolotengoclaro')"  data-group="14" id="2.4:Nolotengoclaro" name="2.4: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionRed">
+                    <p class="BoxForm-BoldTittle">2.5. Puedo trabajar en equipo</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.5:si')"  data-group="15" id="2.5:si" name="2.5: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.5:No')"  data-group="15" id="2.5:No" name="2.5: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.5:Nolotengoclaro')"  data-group="15" id="2.5:Nolotengoclaro" name="2.5: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionOrange">
+                    <p class="BoxForm-BoldTittle">2.6. Me gustan los retos y desafíos</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.6:si')"  data-group="16" id="2.6:si" name="2.6: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.6:No')"  data-group="16" id="2.6:No" name="2.6: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.6:Nolotengoclaro')"  data-group="16" id="2.6:Nolotengoclaro" name="2.6: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionOrange">
+                    <p class="BoxForm-BoldTittle">2.7. Soy capaz de aguantar largas jornadas de estudio o
+                        trabajo frente a un ordenador</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.7:Si')"  data-group="17" id="2.7:Si" name="2.7: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.7:No')"  data-group="17" id="2.7:No" name="2.7: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.7:Nolotengoclaro')"  data-group="17" id="2.7:Nolotengoclaro" name="2.7: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionGreen">
+                    <p class="BoxForm-BoldTittle">2.8. Suelo pedir ayuda cuando es necesario</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.8:Si')"  data-group="18" id="2.8:Si" name="2.8: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.8:No')"  data-group="18" id="2.8:No" name="2.8: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.8:Nolotengoclaro')"  data-group="18" id="2.8:Nolotengoclaro" name="2.8: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionGreen">
+                    <p class="BoxForm-BoldTittle">2.9. Cuando no entiendo algo suelo preguntar para no
+                        quedarme con dudas</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.9:Si')"  data-group="19" id="2.9:Si" name="2.9: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.9:No')"  data-group="19" id="2.9:No" name="2.9: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.9:Nolotengoclaro')"  data-group="19" id="2.9:Nolotengoclaro" name="2.9: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionOrange">
+                    <p class="BoxForm-BoldTittle">2.10. Suelo terminar las actividades que comienzo</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.10:Si')"  data-group="20" id="2.10:Si" name="2.10: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.10:No')"  data-group="20" id="2.10:No" name="2.10: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('2.10:Nolotengoclaro')"  data-group="20" id="2.10:Nolotengoclaro" name="2.10: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="BoxForm-tittle">
+                <div class="BoxForm-tittleFont">
+                    <p>Otras habilidades y conocimientos de interés</p>
+                </div>
+            </div>
+            <br>
+            <div class="BoxFrom-part3">
+                <div class="BoxForm-questionOrange">
+                    <p class="BoxForm-BoldTittle">3.1. Tengo conocimientos básicos de inglés</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.1:Si')"  data-group="21" id="3.1:Si" name="3.1: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.1:No')"  data-group="21" id="3.1:No" name="3.1: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.1:Nolotengoclaro')"  data-group="21" id="3.1:Nolotengoclaro" name="3.1: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionOrange">
+                    <p class="BoxForm-BoldTittle">3.2. Si decidiese estudiar un curso de programación tengo
+                        personas en mi entorno que me apoyarían</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.2:Si')"  data-group="22" id="3.2:Si" name="3.2: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.2:No')"  data-group="22" id="3.2:No" name="3.2: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.2:Nolotengoclaro')"  data-group="22" id="3.2:Nolotengoclaro" name="3.2: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionGreen">
+                    <p class="BoxForm-BoldTittle">3.3. Conozco personas en mi entorno que son
+                        programadoras o están relacionadas con el mundo de la
+                        tecnología</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.3:si')"  data-group="23" id="3.3:si" name="3.3: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.3:No')"  data-group="23" id="3.3:No" name="3.3: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.3:Nolotengoclaro')"  data-group="23" id="3.3:Nolotengoclaro" name="3.3: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionRed">
+                    <p class="BoxForm-BoldTittle">3.4. Tengo disponibilidad de horarios para el estudio</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.4:Si')"  data-group="24" id="3.4:Si" name="3.4: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.4:No')"  data-group="24" id="3.4:No" name="3.4: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.4:Nolotengoclaro')"  data-group="24" id="3.4:Nolotengoclaro" name="3.4: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionOrange">
+                    <p class="BoxForm-BoldTittle">3.5. Conozco cursos sobre programación y tecnología y
+                        comprendo el esfuerzo que conlleva realizarlos</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.5:Si')"  data-group="25" id="3.5:Si" name="3.5: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.5:No')"  data-group="25" id="3.5:No" name="3.5: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.5:Nolotengoclaro')"  data-group="25" id="3.5:Nolotengoclaro" name="3.5: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionOrange">
+                    <p class="BoxForm-BoldTittle">3.6. Mi propósito es trabajar en una empresa del sector
+                        tecnológico</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.6:Si')"  data-group="26" id="3.6:Si" name="3.6: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.6:No')"  data-group="26" id="3.6:No" name="3.6: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.6:Nolotengoclaro')"  data-group="26" id="3.6:Nolotengoclaro" name="3.6: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionOrange">
+                    <p class="BoxForm-BoldTittle">3.7. Soy capaz de adaptarme a diferentes metodologías
+                        de aprendizaje</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.7:si')"  data-group="27" id="3.7:si" name="3.7: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.7:No')"  data-group="27" id="3.7:No" name="3.7: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.7:Nolotengoclaro')"  data-group="27" id="3.7:Nolotengoclaro" name="3.7: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionRed">
+                    <p class="BoxForm-BoldTittle">3.8. Me considero una persona de mente abierta</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.8:Si')"  data-group="28" id="3.8:Si" name="3.8: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.8:No')"  data-group="28" id="3.8:No" name="3.8: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.8:Nolotengoclaro')"  data-group="28" id="3.8:Nolotengoclaro" name="3.8: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionOrange">
+                    <p class="BoxForm-BoldTittle">3.9. Solo realizo un curso si obtengo un certificado o una
+                        acreditación oficial</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.9:Si')"  data-group="29" id="3.9:Si" name="3.9: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.9:No')"  data-group="29" id="3.9:No" name="3.9: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.9:Nolotengoclaro')"  data-group="29" id="3.9:Nolotengoclaro" name="3.9: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxForm-questionGreen">
+                    <p class="BoxForm-BoldTittle">3.10. Mi situación económica es favorable para el estudio</p>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.10:Si')"  data-group="30" id="3.10:Si" name="3.10: Sí">
+                        <span class="zoom">Sí</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.10:No')"  data-group="30" id="3.10:No" name="3.10: No">
+                        <span class="zoom">No</span>
+                    </div>
+                    <div class="BoxFormInputcheckbox">
+                        <input type="checkbox" onclick="checkboxClicked('3.10:Nolotengoclaro')"  data-group="30" id="3.10:Nolotengoclaro" name="3.10: No lo tengo claro">
+                        <span class="zoom">No lo tengo claro</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="containerForm2" class="BoxForm2">
+
+                <br>
+                <div class="BoxForm-tittle">
+                    <div class="BoxForm-tittleFont">
+                        <p>
+                            1. COMPETENCIAS DIGITALES
+                        </p>
+                        <p>
+                            1.1. Alfabetización digital
+
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxFrom-part1">
+                    <div class="BoxForm-questionRed">
+                        <p class="BoxForm-BoldTittle">1.1.1. Uso de dispositivos tecnológicos</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.1.1:A')"  data-group="31" id="1.1.1:A" name="1.1.1: A">
+                            <span class="zoom">Tengo pocos o
+                                ningún conocimiento
+                                sobre el uso de
+                                dispositivos
+                                tecnológicos.
+                                Incluso tengo
+                                problemas para
+                                saber qué hace
+                                cada botón del
+                                teclado de un
+                                ordenador</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.1.1:B')"  data-group="31" id="1.1.1:B" name="1.1.1: B">
+                            <span class="zoom">Tengo
+                                conocimientos muy
+                                básicos sobre el uso
+                                de dispositivos
+                                tecnológicos. Sin
+                                embargo, soy capaz
+                                de enviar un correo
+                                electrónico o realizar
+                                una videollamada
+                                sin ayuda</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.1.1:C')"  data-group="31" id="1.1.1:C" name="1.1.1: C">
+                            <span class="zoom">Sé utilizar
+                                dispositivos
+                                tecnológicos de
+                                forma eficiente para
+                                distintas actividades
+                                básicas como
+                                comunicarme a
+                                través de correo
+                                electrónico y
+                                videollamada,
+                                compartir archivos,
+                                uso de redes
+                                sociales, etc</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.1.1:D')"  data-group="31" id="1.1.1:D" name="1.1.1: D">
+                            <span class="zoom">Domino el uso de
+                                distintos dispositivos
+                                tecnológicos,
+                                intentando
+                                aprovechar al
+                                máximo sus
+                                posibilidades y
+                                recursos tanto para
+                                facilitar mi trabajo
+                                como para mi vida
+                                diaria</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="BoxForm-questionRed">
+                        <p class="BoxForm-BoldTittle">1.1.2. Búsquedas de información</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.1.2:A')"  data-group="32" id="1.1.2:A" name="1.1.2: A">
+                            <span class="zoom">Tengo dificultades
+                                para buscar y
+                                acceder a
+                                información en línea</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.1.2:B')"  data-group="32" id="1.1.2:B" name="1.1.2: B">
+                            <span class="zoom">Puedo buscar
+                                información básica
+                                en línea, pero no
+                                suelo refinar las
+                                búsquedas y tengo
+                                dificultades para
+                                evaluar la fiabilidad
+                                de las fuentes</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.1.2:C')"  data-group="32" id="1.1.2:C" name="1.1.2: C">
+                            <span class="zoom">Soy capaz de
+                                buscar y evaluar la
+                                calidad de la
+                                información en
+                                línea, utilizando
+                                diferentes
+                                herramientas y
+                                fuentes de manera
+                                efectiva</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.1.2:D')"  data-group="32" id="1.1.2:D" name="1.1.2: D">
+                            <span class="zoom">Sé qué motores de
+                                búsqueda y bases
+                                de datos responden
+                                mejor a mis
+                                necesidades.
+                                Utilizo filtros
+                                y modifico las
+                                búsquedas de
+                                información.
+                                Puedo evaluar la
+                                calidad de la
+                                información que
+                                obtengo.
+                                Entiendo cómo los
+                                motores de
+                                búsqueda clasifican
+                                la información y
+                                mejoro las
+                                búsquedas con el
+                                uso de vocabulario
+                                específico</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="BoxForm-questionRed">
+                        <p class="BoxForm-BoldTittle">1.1.3. Gestiones administrativas</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.1.3:A')"  data-group="33" id="1.1.3:A" name="1.1.3: A">
+                            <span class="zoom">Tengo dificultades
+                                para realizar
+                                gestiones básicas
+                                de la vida diaria a
+                                través de internet
+                                sin ayuda</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.1.3:B')"  data-group="33" id="1.1.3:B" name="1.1.3: B">
+                            <span class="zoom">Puedo realizar
+                                gestiones básicas
+                                como solicitar una
+                                cita médica a través
+                                de internet o
+                                consultar un
+                                extracto bancario,
+                                aunque en algunas
+                                ocasiones necesito
+                                ayuda de terceras
+                                personas</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.1.3:C')"  data-group="33" id="1.1.3:C" name="1.1.3: C">
+                            <span class="zoom">Soy capaz de
+                                realizar diferentes
+                                gestiones
+                                administrativas
+                                básicas a través de
+                                internet como
+                                solicitar una cita
+                                médica, consultar un
+                                extracto bancario,
+                                etc., sin ayuda de
+                                terceras personas</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.1.3:D')"  data-group="33" id="1.1.3:D" name="1.1.3: D">
+                            <span class="zoom">Puedo realizar
+                                gestiones
+                                administrativas
+                                complejas de todo
+                                tipo a través de
+                                internet sin ayuda
+                                de terceras
+                                personas</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="BoxForm-questionOrange">
+                        <p class="BoxForm-BoldTittle">1.1.4. Seguridad digital</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.1.4:A')"  data-group="34" id="1.1.4:A" name="1.1.4: A">
+                            <span class="zoom">No tengo ningún
+                                conocimiento sobre
+                                seguridad en
+                                internet ni sobre
+                                cómo proteger mis
+                                datos personales y
+                                los de otras
+                                personas</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.1.4:B')"  data-group="34" id="1.1.4:B" name="1.1.4: B">
+                            <span class="zoom">Tengo
+                                conocimientos
+                                básicos sobre
+                                seguridad en
+                                internet y sé que
+                                sólo puedo
+                                compartir cierto tipo
+                                de información
+                                acerca de mí o de
+                                otras personas en
+                                entornos online</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.1.4:C')"  data-group="34" id="1.1.4:C" name="1.1.4: C">
+                            <span class="zoom">Tengo ciertas
+                                nociones de
+                                seguridad en
+                                internet, sé lo que
+                                son las cookies y a
+                                menudo cambio la
+                                configuración de
+                                privacidad por
+                                defecto de los
+                                servicios online para
+                                mejorar la
+                                protección de mis
+                                datos</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.1.4:D')"  data-group="34" id="1.1.4:D" name="1.1.4: D">
+                            <span class="zoom">Tengo una
+                                comprensión amplia
+                                sobre seguridad en
+                                internet y sobre
+                                problemas de
+                                privacidad. Sé qué
+                                son las cookies,
+                                soy consciente de
+                                que los datos sobre
+                                mi identidad digital
+                                pueden ser
+                                utilizados por
+                                terceras personas y
+                                sé modificar la
+                                información que doy
+                                sobre mí. Además,
+                                entiendo el riesgo
+                                existente de robo de
+                                identidad y de otras
+                                credenciales</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="BoxForm-questionOrange">
+                        <p class="BoxForm-BoldTittle">1.2. Comunicación digital</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.2:A')"  data-group="35" id="1.2:A" name="1.2: A">
+                            <span class="zoom">No sé cómo
+                                compartir archivos o
+                                información online ni
+                                sé cómo utilizar las
+                                distintas apps de
+                                comunicación online
+                                que existen de
+                                forma segura</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.2:B')"  data-group="35" id="1.2:B" name="1.2: B">
+                            <span class="zoom">Sé compartir
+                                archivos e
+                                información a través
+                                de correo
+                                electrónico y
+                                whatsapp. Además,
+                                sé realizar
+                                videollamadas. Sin
+                                embargo, de forma
+                                puntual necesito
+                                ayuda de terceras
+                                personas</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.2:C')"  data-group="35" id="1.2:C" name="1.2: C">
+                            <span class="zoom">Sé compartir
+                                archivos e
+                                información a través
+                                de correo
+                                electrónico y
+                                whatsapp. Además,
+                                sé realizar
+                                videollamadas. No
+                                necesito ayuda para
+                                ello. Sin embargo,
+                                tengo dificultades
+                                con apps más
+                                complejas</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.2:D')"  data-group="35" id="1.2:D" name="1.2: D">
+                            <span class="zoom">Sé cómo compartir
+                                archivos e
+                                información online y
+                                domino las distintas
+                                apps de
+                                comunicación online
+                                que existen de
+                                forma segura.
+                                Además, sé usar las
+                                redes sociales con
+                                fines distintos al ocio</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="BoxForm-questionRed">
+                        <p class="BoxForm-BoldTittle">1.3. Creación de contenidos</p>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.3:A')"  data-group="36" id="1.3:A" name="1.3: A">
+                            <span class="zoom">No suelo crear
+                                contenido en
+                                internet y no tengo
+                                conocimientos de
+                                edición fotográfica ni
+                                de video</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.3:B')"  data-group="36" id="1.3:B" name="1.3: B">
+                            <span class="zoom">Sé crear contenido
+                                en internet de forma
+                                básica pero no suelo
+                                hacerlo, suelo
+                                consumir las
+                                creaciones que
+                                otras personas han
+                                hecho</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.3:C')"  data-group="36" id="1.3:C" name="1.3: C">
+                            <span class="zoom">Creo contenido en
+                                internet en distintos
+                                formatos y de forma
+                                frecuente, tengo
+                                ciertos
+                                conocimientos y
+                                habilidades de
+                                edición fotográfica y
+                                de video,
+                                publicación de post
+                                para redes sociales,
+                                blogs, etc</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.3:D')"  data-group="36" id="1.3:D" name="1.3: D">
+                            <span class="zoom">Tengo habilidades
+                                avanzadas en la
+                                creación de
+                                contenido digital en
+                                distintos formatos
+                                (edición fotográfica y
+                                de video, post para
+                                redes sociales,
+                                blogs, etc.),
+                                produciendo
+                                material creativo y
+                                de alta calidad</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="BoxForm-questionGreen">
+                        <p class="BoxForm-BoldTittle">1.4. Programación</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.4:A')"  data-group="37" id="1.4:A" name="1.4: A">
+                            <span class="zoom">No tengo ningún
+                                conocimiento sobre
+                                programación</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.4:B')"  data-group="37" id="1.4:B" name="1.4: B">
+                            <span class="zoom">Sé cómo funciona el
+                                software de forma
+                                básica y tengo
+                                curiosidad sobre el
+                                potencial de las TIC
+                                para la
+                                programación</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.4:C')"  data-group="37" id="1.4:C" name="1.4: C">
+                            <span class="zoom">Conozco algunas
+                                herramientas
+                                básicas de
+                                programación y
+                                puedo crear una
+                                página web sencilla
+                                con herramientas de
+                                edición específicas
+                                de uso amigable
+                                (Canva, Wix,
+                                Wordpress…)</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('1.4:D')"  data-group="37" id="1.4:D" name="1.4: D">
+                            <span class="zoom">Soy capaz de
+                                codificar y
+                                programar en varios
+                                lenguajes</span>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div class="BoxForm-tittle">
+                    <div class="BoxForm-tittleFont">
+                        <p>
+                            2. MOTIVACIÓN
+
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxFrom-part2">
+                    <div class="BoxForm-questionRed">
+                        <p class="BoxForm-BoldTittle">2.1. Iniciativa</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('2.1:A')"  data-group="38" id="2.1:A" name="2.1: A">
+                            <span class="zoom">Muestro poca o
+                                ninguna iniciativa
+                                para asumir
+                                responsabilidades y
+                                para la toma de
+                                decisiones</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('2.1:B')"  data-group="38" id="2.1:B" name="2.1: B">
+                            <span class="zoom">A veces tomo la
+                                iniciativa, pero
+                                tiendo a depender
+                                de indicaciones o
+                                instrucciones
+                                externas</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('2.1:C')"  data-group="38" id="2.1:C" name="2.1: C">
+                            <span class="zoom">Soy capaz de
+                                identificar algunas
+                                oportunidades y
+                                asumir
+                                responsabilidades
+                                frecuentemente sin
+                                necesidad de
+                                supervisión constante</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('2.1:D')"  data-group="38" id="2.1:D" name="2.1: D">
+                            <span class="zoom">Soy capaz de tomar
+                                la iniciativa en
+                                diversas situaciones
+                                sin necesidad de
+                                supervisión
+                                constante,
+                                aportando nuevas
+                                ideas y soluciones</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="BoxForm-questionRed">
+                        <p class="BoxForm-BoldTittle">2.2. Persistencia</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('2.2:A')"  data-group="39" id="2.2:A" name="2.2: A">
+                            <span class="zoom">No me considero
+                                una persona muy
+                                perseverante, me
+                                rindo fácilmente
+                                ante los obstáculos
+                                y dificultades</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('2.2:B')"  data-group="39" id="2.2:B" name="2.2: B">
+                            <span class="zoom">En ocasiones me
+                                mantengo
+                                persistente en mis
+                                metas, pero puede
+                                desanimarse ante
+                                grandes desafíos</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('2.2:C')"  data-group="39" id="2.2:C" name="2.2: C">
+                            <span class="zoom">Soy persistente y en
+                                el logro de mis
+                                metas, aunque a
+                                veces sienta que me
+                                superan o supongan
+                                ir superando
+                                obstáculos con gran
+                                esfuerzo</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('2.2:D')"  data-group="39" id="2.2:D" name="2.2: D">
+                            <span class="zoom">Soy persistente en
+                                mis metas y
+                                mantengo el
+                                enfoque ante
+                                cualquier adversidad
+                                que surja en el
+                                camino</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="BoxForm-questionRed">
+                        <p class="BoxForm-BoldTittle">2.3. Interés en aprender</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('2.3:A')"  data-group="40" id="2.3:A" name="2.3: A">
+                            <span class="zoom">No suelo mostrar
+                                interés en aprender
+                                y explorar temas
+                                nuevos o
+                                desafiantes</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('2.3:B')"  data-group="40" id="2.3:B" name="2.3: B">
+                            <span class="zoom">Muestro cierto nivel
+                                de curiosidad en
+                                aprender y explorar,
+                                pero generalmente
+                                me limito a temas
+                                que me son
+                                familiares y que no
+                                requieren salir de mi
+                                zona de confort</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('2.3:C')"  data-group="40" id="2.3:C" name="2.3: C">
+                            <span class="zoom">Tengo bastante
+                                curiosidad e interés
+                                en aprender y
+                                explorar temas
+                                diversos, buscando
+                                constantemente
+                                oportunidades para
+                                expandir mis
+                                conocimientos</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('2.3:D')"  data-group="40" id="2.3:D" name="2.3: D">
+                            <span class="zoom">Tengo gran
+                                curiosidad y un
+                                deseo innato de
+                                aprender y explorar
+                                constantemente
+                                nuevos temas que
+                                me permitan
+                                expandir mis
+                                conocimientos</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="BoxForm-questionOrange">
+                        <p class="BoxForm-BoldTittle">2.4. Esfuerzo</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('2.4:A')"  data-group="41" id="2.4:A" name="2.4: A">
+                            <span class="zoom">Al enfrentarme a
+                                una tarea que
+                                requiere mucho
+                                esfuerzo me suelo
+                                desanimar o rendir
+                                con rapidez y no
+                                suelo dedicar el
+                                tiempo necesario</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('2.4:B')"  data-group="41" id="2.4:B" name="2.4: B">
+                            <span class="zoom">Al enfrentarme a
+                                una tarea que
+                                requiere mucho
+                                esfuerzo me suelo
+                                desanimar, pero
+                                suelo dedicar el
+                                tiempo necesario
+                                hasta terminar</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('2.4:C')"  data-group="41" id="2.4:C" name="2.4: C">
+                            <span class="zoom">Suelo mantener mi
+                                esfuerzo constante
+                                a pesar de las
+                                adversidades que
+                                van surgiendo, me
+                                gusta terminar lo
+                                que empiezo</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('2.4:D')"  data-group="41" id="2.4:D" name="2.4: D">
+                            <span class="zoom">Al enfrentarme a
+                                una tarea me
+                                esfuerzo de forma
+                                excepcional y
+                                muestro una energía
+                                constante en la
+                                mayoría de las
+                                situaciones</span>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div class="BoxForm-tittle">
+                    <div class="BoxForm-tittleFont">
+                        <p>
+                            3. AUTOESTIMA
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxFrom-part3">
+                    <div class="BoxForm-questionRed">
+                        <p class="BoxForm-BoldTittle">3.1. Autoimagen</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('3.1:A')"  data-group="42" id="3.1:A" name="3.1: A">
+                            <span class="zoom">Tengo una
+                                percepción negativa
+                                de mi apariencia y
+                                personalidad. En
+                                ocasiones muestro
+                                falta de aprecio por
+                                mí mismo/a</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('3.1:B')"  data-group="42" id="3.1:B" name="3.1: B">
+                            <span class="zoom">A veces tengo una
+                                imagen positiva de
+                                mí, pero también
+                                soy muy crítico/a
+                                con mi apariencia y
+                                personalidad</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('3.1:C')"  data-group="42" id="3.1:C" name="3.1: C">
+                            <span class="zoom">Tengo una imagen
+                                positiva de mí la
+                                mayoría del tiempo,
+                                muestro aprecio y
+                                aceptación por mí
+                                mismo/a</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('3.1:D')"  data-group="42" id="3.1:D" name="3.1: D">
+                            <span class="zoom">Tengo una imagen
+                                de mí muy positiva.
+                                Además, muestro
+                                respeto y aceptación
+                                incondicional por mi
+                                apariencia y
+                                personalidad</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="BoxForm-questionRed">
+                        <p class="BoxForm-BoldTittle">3.2. Confianza y aceptación</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('3.2:A')"  data-group="43" id="3.2:A" name="3.2: A">
+                            <span class="zoom">Muestro falta de
+                                aceptación y
+                                valoración personal.
+                                Tengo poca
+                                confianza en mis
+                                conocimientos y
+                                capacidades,
+                                mostrando
+                                inseguridad y
+                                autocrítica constante</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('3.2:B')"  data-group="43" id="3.2:B" name="3.2: B">
+                            <span class="zoom">A veces valoro y
+                                muestro confianza
+                                en mis
+                                conocimientos y
+                                capacidades, pero
+                                también tiendo a
+                                dudar y
+                                subestimarme</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('3.2:C')"  data-group="43" id="3.2:C" name="3.2: C">
+                            <span class="zoom">Tengo confianza en
+                                mis conocimientos y
+                                capacidades en la
+                                mayoría de las
+                                situaciones, aunque
+                                hay aspectos sobre
+                                los que dudo o me
+                                siento menos
+                                seguro/a</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('3.2:D')"  data-group="43" id="3.2:D" name="3.2: D">
+                            <span class="zoom">Siempre creo en mí
+                                mismo/a y muestro
+                                confianza en mis
+                                conocimientos y
+                                capacidades de
+                                manera
+                                incondicional</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="BoxForm-questionRed">
+                        <p class="BoxForm-BoldTittle">3.3. Autorrespeto y autocuidados</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('3.3:A')"  data-group="44" id="3.3:A" name="3.3: A">
+                            <span class="zoom">No suelo estar
+                                pendiente de mis
+                                necesidades y rara
+                                vez muestro
+                                autocompasión.
+                                Tengo tendencia a
+                                tratarme duramente
+                                y sin respeto
+                                personal</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('3.3:B')"  data-group="44" id="3.3:B" name="3.3: B">
+                            <span class="zoom">En ocasiones
+                                muestro compasión
+                                y respeto por mí
+                                mismo/a, pero a
+                                veces me trato con
+                                mayor dureza y
+                                autocrítica. Además,
+                                rara vez suelo estar
+                                pendiente de mis
+                                necesidadest</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('3.3:C')"  data-group="44" id="3.3:C" name="3.3: C">
+                            <span class="zoom">Muestro compasión
+                                y respeto por mí
+                                mismo/a la mayor
+                                parte del tiempo,
+                                aunque puede haber
+                                momentos de mayor
+                                dureza y autocrítica.
+                                Además, puedo
+                                llegar a interponer
+                                las necesidades de
+                                otras personas a las
+                                mías propias</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('3.3:D')"  data-group="44" id="3.3:D" name="3.3: D">
+                            <span class="zoom">Siempre procuro
+                                tener en cuenta mis
+                                necesidades y me
+                                trato a mí mismo/a
+                                con amor y respeto
+                                incondicional</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="BoxForm-questionOrange">
+                        <p class="BoxForm-BoldTittle">3.4. Aceptación de éxitos y fracasos</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('3.4:A')"  data-group="45" id="3.4:A" name="3.4: A">
+                            <span class="zoom">Con frecuencia
+                                tiendo a restar valor
+                                a mis éxitos y
+                                magnifico mis
+                                fracasos. Además,
+                                tengo dificultades
+                                para creerme el
+                                reconocimiento
+                                positivo
+                            </span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('3.4:B')"  data-group="45" id="3.4:B" name="3.4: B">
+                            <span class="zoom">Normalmente
+                                acepto mis éxitos,
+                                pero en ocasiones
+                                también les resto
+                                importancia, y me
+                                afectan negativamente los
+                                fracasos
+                            </span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('3.4:C')"  data-group="45" id="3.4:C" name="3.4: C">
+                            <span class="zoom">Casi siempre trato
+                                de aceptar y
+                                reconocer mis éxitos
+                                y fracasos con
+                                objetividad, pero me
+                                cuesta aprender de
+                                mis errores
+                            </span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('3.4:D')"  data-group="45" id="3.4:D" name="3.4: D">
+                            <span class="zoom">Reconozco mis
+                                éxitos con humildad
+                                y acepto y
+                                agradezco los
+                                elogios. Del mismo
+                                modo veo los
+                                fracasos de forma
+                                objetiva y como
+                                oportunidades de
+                                crecimiento a través
+                                del aprendizaje de
+                                mis errores
+                            </span>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div class="BoxForm-tittle">
+                    <div class="BoxForm-tittleFont">
+                        <p>
+                            4. TRABAJO EN GRUPO
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="BoxFrom-part4">
+                    <div class="BoxForm-questionRed">
+                        <p class="BoxForm-BoldTittle">4.1. Organización y distribución de tareas</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('4.1:A')"  data-group="46" id="4.1:A" name="4.1: A">
+                            <span class="zoom">Cuando trabajo en
+                                grupo no me
+                                molesto en hacer
+                                distribución de
+                                tareas ni se
+                                establecen roles
+                                dentro del grupo</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('4.1:B')"  data-group="46" id="4.1:B" name="4.1: B">
+                            <span class="zoom">La distribución de
+                                tareas es desigual y
+                                no hay unos roles
+                                bien definidos</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('4.1:C')"  data-group="46" id="4.1:C" name="4.1: C">
+                            <span class="zoom">La distribución de
+                                tareas es razonable,
+                                pero podría
+                                mejorarse para
+                                lograr una mayor
+                                equidad en las
+                                responsabilidades</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('4.1:D')"  data-group="46" id="4.1:D" name="4.1: D">
+                            <span class="zoom">Las tareas y roles se
+                                distribuyen de manera
+                                justa, considerando
+                                las habilidades y
+                                preferencias de cada
+                                miembro del grupo</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="BoxForm-questionRed">
+                        <p class="BoxForm-BoldTittle">4.2. Compromiso con el grupo y cumplimiento de plazos</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('4.2:A')"  data-group="47" id="4.2:A" name="4.2: A">
+                            <span class="zoom">Cuando trabajo en
+                                grupo no suelo
+                                cumplir con los
+                                plazos establecidos</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('4.2:B')"  data-group="47" id="4.2:B" name="4.2: B">
+                            <span class="zoom">Cumplo algunos
+                                plazos, pero hay
+                                ciertos retrasos
+                                ocasionales en la
+                                entrega de mis
+                                tareas o proyectos</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('4.2:C')"  data-group="47" id="4.2:C" name="4.2: C">
+                            <span class="zoom">Cumplo la mayoría
+                                de plazos de
+                                manera
+                                satisfactoria, a
+                                excepción de casos
+                                puntuales</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('4.2:D')"  data-group="47" id="4.2:D" name="4.2: D">
+                            <span class="zoom">Cumplo todos los
+                                plazos puntualmente y
+                                muestro gran
+                                compromiso y
+                                responsabilidad con
+                                las fechas
+                                establecidas</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="BoxForm-questionRed">
+                        <p class="BoxForm-BoldTittle">4.3. Contribución al grupo</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('4.3:A')"  data-group="48" id="4.3:A" name="4.3: A">
+                            <span class="zoom">Cuando trabajo en
+                                grupo no me gusta
+                                ayudar ni brindar
+                                apoyo a los demás
+                                miembros y
+                                tampoco suelo
+                                contribuir
+                                significativamente al
+                                trabajo del grupo</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('4.3:B')"  data-group="48" id="4.3:B" name="4.3: B">
+                            <span class="zoom">La mayoría de
+                                veces contribuyo al
+                                trabajo del grupo,
+                                pero no siempre
+                                brindo ayuda o el
+                                apoyo necesario a
+                                otros miembros del
+                                grupo</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('4.3:C')"  data-group="48" id="4.3:C" name="4.3: C">
+                            <span class="zoom">Contribuyo siempre
+                                al grupo y brindo
+                                ayuda y apoyo a
+                                otros miembros del
+                                grupo, pero solo
+                                cuando me lo piden
+                                directamente</span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('4.3:D')"  data-group="48" id="4.3:D" name="4.3: D">
+                            <span class="zoom">Contribuyo al grupo
+                                siempre y siempre
+                                brindo ayuda y un
+                                apoyo condicional a
+                                los demás incluso
+                                aunque no sean de mi
+                                grupo de trabajo</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="BoxForm-questionOrange">
+                        <p class="BoxForm-BoldTittle">4.4. Resolución de conflictos</p>
+                        <br>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('4.4:A')"  data-group="49" id="4.4:A" name="4.4: A">
+                            <span class="zoom">Cuando trabajo en
+                                equipo tengo
+                                muchas dificultades
+                                para resolver
+                                conflictos, suelo
+                                imponer mi punto de
+                                vista y no me
+                                expreso de forma
+                                coherente, clara y
+                                fluida
+                            </span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('4.4:B')"  data-group="49" id="4.4:B" name="4.4: B">
+                            <span class="zoom">Si surgen problemas
+                                escucho las
+                                opiniones del resto
+                                del grupo, pero rara
+                                vez me involucro o
+                                aporto soluciones.
+                                Considero que la
+                                forma en la que
+                                expreso mi punto de
+                                vista en ocasiones
+                                no es la más
+                                adecuada y tengo
+                                problemas para
+                                comunicarme
+                            </span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('4.4:C')"  data-group="49" id="4.4:C" name="4.4: C">
+                            <span class="zoom">Trato de abordar los
+                                conflictos
+                                escuchando a todos
+                                los miembros del
+                                grupo y me
+                                involucro en la
+                                búsqueda de
+                                soluciones que
+                                tengan en cuenta
+                                las necesidades de
+                                cada miembro.
+                                Expreso mi punto de
+                                vista sin imponer
+                                mis ideas y me
+                                comunico de forma
+                                aceptable y bastante
+                                respetuosa
+                            </span>
+                        </div>
+                        <div class="BoxFormInputcheckbox">
+                            <input type="checkbox" onclick="checkboxClicked('4.4:D')"  data-group="49" id="4.4:D" name="4.4: D">
+                            <span class="zoom">Abordo los conflictos
+                                pacientemente y de
+                                forma creativa,
+                                tratando de buscar
+                                buenas soluciones,
+                                mantengo una actitud
+                                de escucha y la
+                                manera en la que
+                                expreso mi punto de
+                                vista es clara,
+                                respetuosa, fluida y
+                                eficiente
+                            </span>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <button class="BoxFrom-Button" type="submit">ENVIAR</button>
+                <br>
+            </div>
+        </div>
+
+    </form>
+
+    <!-- Footer Oliwia -->
+
 </body>
+<script src="./form-javascript.js" ></script>
+
 </html>

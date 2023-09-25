@@ -1,19 +1,34 @@
 *{
     margin: 0;
-    padding: 0;  
-    
+    padding: 0; 
+    font-family: Poppins-Regular, 'sans-serif', 'arial';      
+}
+
+ 
+@font-face {
+    font-family: 'Firacode';
+    src: url(./Fonts/FiraCode-VariableFont_wght.ttf) ;
 }
 
 @font-face {
-    font-family: "FiraCode";
-    src: url(../talentoDigital/fonts/FiraCode/FiraCode-VariableFont_wght.ttf);
-    font-family: 'Poppins';
-    src: url(../talentoDigital/fonts/Poppins/Poppins-Regular.ttf);
-    src: url(../talentoDigital/fonts/Poppins/Poppins-Bold.ttf);
+    font-family: 'Poppins-Regular';
+    src: url(./Fonts/Poppins-Regular.ttf) ;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(./Fonts/Poppins-ExtraBold.ttf) ;
+}
+
+@font-face {
     font-family: 'Rubik';
-    src: url(../talentoDigital/fonts/Rubik/Rubik-VariableFont_wght.ttf);
-    src: url(../talentoDigital/fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf);
-} 
+    src: url(./Fonts/Rubik-VariableFont_wght.ttf) ;
+}
+
+@font-face {
+    font-family: 'Rubik-italic';
+    src: url(./Fonts/Rubik-Italic-VariableFont_wght.ttf)
+}
 
 :root{
     --orange: #ff4700;
@@ -23,7 +38,228 @@
     --lightorange: #ffa37f;
 }
 
+/* Body Oli */
+
+.inputName {
+
+    box-shadow:  inset 2px 2px 5px #020202, inset -5px -5px 10px #ffffff;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+input {
+
+    box-shadow:  inset 2px 2px 5px #020202;
+    border-radius: 2em;
+    
+    padding: 1em;
+}
+
+.form-name {
+    background-color: var(--lightorange);
+    border: 0;
+    color: var(--white);
+    padding: 1vh 5vh;
+    font-size: 3vh;
+    border-radius: 15px;
+    text-shadow: 2px 2px 2px var(--orange);
+    box-shadow: 2px 2px 0px 0px #020100;
+    letter-spacing: -0.2px;
+
+
+}
+
+.form-email {
+    background-color: var(--lightorange);
+    border: 0;
+    color: var(--white);
+    padding: 1vh 5vh;
+    font-size: 3vh;
+    border-radius: 15px;
+    text-shadow: 2px 2px 2px var(--orange);
+    box-shadow: 2px 2px 0px 0px #020100;
+    letter-spacing: -0.2px;
+}
+
+Form {
+    background-image: 
+    linear-gradient( 0.25turn, #ff4700 , #ffa37f 50%,#ff4700),
+    url(../img/istockphoto-820219934-170667a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.BoxForm-instruction {
+    background-color: #ffa37f;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration: underline;
+    font-size: small 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1em;
+    padding: 2vh;
+    font-family: 'rubik';
+    box-shadow: 4px 4px 0px 0px #020100;
+    margin-top: 10vh;
+
+}
+
+.BoxForm {
+
+    margin-top: 2vh;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.BoxForm2 {
+
+    margin-top: 2vh;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.BoxForm-BoldTittle {
+    font-weight: bolder;
+    font-style:oblique;
+    font-size: large;
+}
+
+.BoxForm-tittle{
+    background-color: #ffa37f;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1em;
+    padding: 2vh;
+    font-family: 'rubik';
+    box-shadow: 4px 4px 0px 0px #020100;
+    margin-top: 10vh;
+    
+
+}
+
+.BoxFrom-part1 {
+    background-color:#ffa37f;
+    
+    border-radius: 0em 1em 1em 0em;
+    padding: 1em;
+    width: 80vw;
+    box-shadow: 7px 7px 0px 0px #020100;
+}
+
+.BoxFrom-part2 {
+    background-color: #ffa37f;
+    border-radius: 0em 0em 1em 0em;
+    padding: 1em;
+    width: 80vw;
+    box-shadow: 7px 7px 0px 0px #020100;
+}
+
+.BoxFrom-part3 {
+    background-color: #ffa37f;
+    border-radius: 0em 0em 1em 0em;
+    padding: 1em;
+    width: 80vw;
+    box-shadow: 7px 7px 0px 0px #020100;
+}
+
+.BoxFrom-part4 {
+    background-color: #ffa37f;
+    border-radius: 0em 0em 1em 0em;
+    padding: 1em;
+    width: 80vw;
+    box-shadow: 7px 7px 0px 0px #020100;
+}
+
+checkbox {
+    border-radius: 50%;
+}
+
+.BoxFrom-Button {
+    margin-top: 8vh;
+    color: var(--white);
+    background-color: #ff4700;
+    padding: 5px;
+}
+
+
+.BoxFrom-Button {
+    align-items: center;
+    background-image: linear-gradient(144deg, #ff4700 , #ffa37f 50%,#ff4700);
+    border: 1;
+    border-radius: 8px;
+    box-shadow: 3px 3px 0px 0px #020100;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 10px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+  
+.BoxFrom-Button:hover {
+    box-shadow: 1px 1px 10px 5px var(--white);
+}
+  
+.zoom {
+    transition: transform 0.3s; 
+    cursor: pointer;
+}
+
+.zoom:hover {
+    transform: scale(1.20);
+}
+
+
+.BoxForm-tittleFont p {
+    font-size: 2.8vh;
+}
+
+@media (max-width: 950px) {
+    .BoxForm-tittleFont {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1em;
+    }
 
 
 
+    .BoxForm-instruction p {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1em;
+
+    }
+}
 
