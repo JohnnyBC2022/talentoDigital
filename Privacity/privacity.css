@@ -83,7 +83,7 @@ header{
     width: 35vh;
     margin: 5vh;
 }
-h1{
+.aviso {
     font-size: 10vh;
     margin: 5vh;
     color: var(--orange);
@@ -94,12 +94,14 @@ p{
     word-wrap: break-word;
     line-height: 1;
 }
-h3{
+.h3fonts{
     margin: 3vh;
 }
-.h2privacity{
-    font-size: 5vh;
+.h2fonts{
+    font-size: 6.5vh;
     margin: 5vh;
+    color: var(--orange);
+    
 }
 
 .alltext{
@@ -216,4 +218,14 @@ a:active {
         font-size: 4vw;
         margin-left: 2vh;
     }
+.h2fonts{
+    font-size: 5vh;
+    text-align: center;
+}
+.aviso {
+    font-size: 7vh;
+}
+.h3fonts{
+    text-align: center;
+}
 }
