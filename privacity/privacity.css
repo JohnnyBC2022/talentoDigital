@@ -61,7 +61,15 @@ header{
 
 .img-header img{
     width: 50%;
-    margin: auto 10vh;
+}
+
+.img-header{
+    width: 30vw;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 4.5vh;
 }
 
 .right-header{
@@ -73,7 +81,7 @@ header{
 .title-header{
     color: var(--white);
     text-align: center;
-    font-size: 3.2vw;
+    font-size: 3vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,10 +170,16 @@ a:active {
     color: var(--white);
 }
 
-@media(max-width: 1150px){
-    .img-header img{
+@media(max-width: 950px){
+    
+    .img-header{
+        width: 30vw;
+        margin: -2vh 3vh;
+    }
+
+    .right-header{
         width: 75%;
-        margin: 1vh 3vh;
+        height: 65%;
     }
 
     .allphotosandtext{
@@ -179,34 +193,9 @@ a:active {
     }
 }
 
-@media(max-width: 950px){
-    
-    .img-header img{
-        width: 60%;
-        margin: 1.3vh 2.5vh;
-    }
-
-    .right-header{
-        width: 75%;
-        height: 60%;
-    }
-
-    .title-header{
-        font-size: 3.8vw;
-    }
-}
-
-@media(max-width: 550px){
-    .img-header img{
-        width: 75%;
-        margin: 1.3vh 1.8vh;
-    }
-}
-
 @media(max-width: 450px){
-    .img-header img{
-        width: 75%;
-        margin: 0.8vh 1.5vh;
+    .img-header{
+        margin: -3vh 3vh;
     }
     
     .right-header{
@@ -214,10 +203,6 @@ a:active {
         height: 45%;
     }
 
-    .title-header{
-        font-size: 4vw;
-        margin-left: 2vh;
-    }
 .h2fonts{
     font-size: 5vh;
     text-align: center;
