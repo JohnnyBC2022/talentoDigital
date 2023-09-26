@@ -156,9 +156,10 @@ nav{
     justify-content: space-around;
     align-items: center;
     background-image:linear-gradient(rgba(235,229,227,0.8),
-    #f8f8f82e),url(../B-APRENDE-IMAGEN-1.jpg); 
+    #f8f8f82e),url(../img/B-APRENDE-IMAGEN-1.jpg); 
     background-size: cover;   
-    height: 80vh;
+    padding: 10vh;
+   
     
     
     }
@@ -173,7 +174,7 @@ nav{
     flex-direction: column;
     align-items: center;
     border-radius: 5%;
-    box-shadow: 3px 3px 3px 0px grey;
+    box-shadow: 4px 4px 0px 0px #020100;
     
 }
 .box_right{
@@ -187,7 +188,7 @@ nav{
     flex-direction: column;
     align-items: center;
     border-radius: 5%;
-    box-shadow: 3px 3px 3px 0px grey;
+    box-shadow: 4px 4px 0px 0px #020100;
     
     
 }
@@ -312,6 +313,7 @@ nav{
 }
 
 @media(max-width: 950px){
+
     
     .img-header{
         width: 30vw;
@@ -345,6 +347,11 @@ nav{
         
     }    
     .box_left{
+        margin-bottom: 10vh;
+        margin-top: 10vh;
+    }
+
+    .box_right{
         margin-bottom: 10vh;
     }
 }

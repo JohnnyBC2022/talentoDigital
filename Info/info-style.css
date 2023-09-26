@@ -74,7 +74,7 @@ header{
     margin-top: 50px;
     margin-bottom: 10vh;
     border-radius: 20px;
-    box-shadow: 2px 2px 0px 0px#000000;
+    box-shadow: 4px 4px 0px 0px #020100;
 }
 .card{
     text-align: center;
