@@ -62,7 +62,7 @@ header{
 .title-header{
     color: var(--white);
     text-align: center;
-    font-size: 3.2vw;
+    font-size: 3vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -242,10 +242,7 @@ a:link, a:visited, a:active {
     }
     .right-header{
         width: 75%;
-        height: 60%;
-    }
-    .title-header{
-        font-size: 3.8vw;
+        height: 65%;
     }
     nav{
         margin: -3vh 0;
@@ -271,13 +268,13 @@ a:link, a:visited, a:active {
     }
 }
 @media(max-width: 450px){
+    .img-header{
+        margin: -3vh 3vh;
+    }
+
     .right-header{
         width: 75%;
         height: 45%;
-    }
-    .title-header{
-        font-size: 4vw;
-        margin-left: 2vh;
     }
     nav{
         margin: -4.5vh 0;
