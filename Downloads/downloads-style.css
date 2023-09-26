@@ -343,25 +343,6 @@ nav{
         font-size: medium;
         
     }
-
-    .box_left{
-        width: 70vw;
-        height: 30vh;
-    }
-    
-    .box_right{
-        width: 70vw;
-        height: 30vh;
-
-    }
-
-.tittle_right{
-    font-size: 6.5vw;
-    
-}
-.line_right{
-    width: 55vw;
-}
 }
 
 @media(max-width: 550px){
@@ -430,4 +411,4 @@ nav{
     flex-direction: column;
     gap: 10px;
   }
-  }
+}
