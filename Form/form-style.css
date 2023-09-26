@@ -416,6 +416,10 @@ checkbox {
         height: 65%;
     }
 
+    .title-header{
+        font-size: 2.3vw;
+    }
+
     nav{
         margin: -3vh 0;
     }

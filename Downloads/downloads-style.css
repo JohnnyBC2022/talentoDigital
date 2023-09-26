@@ -293,12 +293,7 @@ nav{
       color: var(--orange);
   }
 
-<<<<<<< HEAD
 @media(max-width: 1150px){
-    .img-header img{
-        width: 60%;
-        margin: 0.8vh 7vh;
-    }
 
     .main_download{
         display: flex;
@@ -316,8 +311,6 @@ nav{
     }
 }
 
-=======
->>>>>>> 294435070eed297071dd1d261d3c178b7822e702
 @media(max-width: 950px){
     
     .img-header{
@@ -328,6 +321,10 @@ nav{
     .right-header{
         width: 75%;
         height: 65%;
+    }
+
+    .title-header{
+        font-size: 2.3vw;
     }
 
     nav{

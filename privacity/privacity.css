@@ -182,6 +182,10 @@ a:active {
         height: 65%;
     }
 
+    .title-header{
+        font-size: 2.3vw;
+    }
+
     .allphotosandtext{
         flex-direction: column;
     
