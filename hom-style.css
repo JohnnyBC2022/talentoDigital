@@ -252,9 +252,10 @@ a:link, a:visited, a:active {
         width: 75%;
         height: 65%;
     }
-    /* nav{
-        margin: -3vh 0;
-    } */
+    .container-nav{
+        height: 8.5vh;
+        margin: -3vh 0 auto 0;
+    }
     .left-nav{
         width: 70%;
     }
@@ -271,6 +272,11 @@ a:link, a:visited, a:active {
 }
 
 @media(max-width: 550px){
+    .container-nav{
+        height: 7.5vh;
+        margin: -3vh 0 auto 0;
+    }
+
     .option-nav{
         font-size: small;
     }
