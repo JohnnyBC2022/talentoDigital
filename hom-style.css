@@ -68,10 +68,15 @@ header{
     justify-content: center;
     height: 100%;
 }
+
+.container-nav{
+    height: 7vh;
+    margin: 2vh 0;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
-    margin: 2vh 0;
     padding: 1.5vh 0;
     width: 100%;
     background-color: var(--orange);
@@ -228,6 +233,7 @@ a:link, a:visited, a:active {
 }
 
 @media (max-width: 1030px){
+
     .allphotosandtext{
       flex-direction: column;
     }
@@ -278,9 +284,9 @@ a:link, a:visited, a:active {
         width: 75%;
         height: 45%;
     }
-    nav{
-        margin: -4.5vh 0;
-        padding: 1vh 0;
+    .container-nav{
+        height: 7vh;
+        margin: -5vh 0 auto 0;
     }
     .option-nav{
         font-size: x-small;
