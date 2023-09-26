@@ -197,7 +197,7 @@ input {
     letter-spacing: -0.2px;
 }
 
-Form {
+Form, .BoxForm , .BoxFormV {
     background-image: 
     linear-gradient( 0.25turn, #ff4700 , #ffa37f 50%,#ff4700),
     url(../img/istockphoto-820219934-170667a.jpg);
@@ -227,6 +227,17 @@ Form {
 
     margin-top: 2vh;
     padding: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.BoxFormV {
+
+
     display: flex;
     justify-content: center;
     align-items: center;
