@@ -167,6 +167,7 @@ background-color: var(--orange);
 display: flex;
 justify-content: center;
 align-items: center;
+border-top: 2vh solid var(--white);
 }
 .container-bottom-h2{
 color: var(--white);
