@@ -189,7 +189,7 @@ a:active {
       
     .downtext{
       flex-direction: column;
-      gap: 10px;
+      height: 60%;
     }
 }
 
