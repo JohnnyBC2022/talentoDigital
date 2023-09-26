@@ -246,9 +246,9 @@ a:link, a:visited, a:active {
         width: 75%;
         height: 65%;
     }
-    nav{
+    /* nav{
         margin: -3vh 0;
-    }
+    } */
     .left-nav{
         width: 70%;
     }

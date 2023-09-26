@@ -212,7 +212,7 @@ nav{
 .tittleH2{
     color: #ffffff;
     -webkit-text-stroke: rgba(255, 98, 0, 0.797) 0.1px; 
-    font-size: 8vh;
+    font-size: 6vh;
     text-shadow: rgb(98, 98, 98) 5px 5px 5px 0px;
     
 }
@@ -221,7 +221,7 @@ nav{
     -webkit-text-stroke: rgba(255, 98, 0, 0.797) 0.1px;
     display: flex;
     justify-content: center;
-    font-size: 4vh;
+    font-size: 3vh;
     
 }
 .tittle_right h1{
@@ -295,8 +295,14 @@ nav{
         display: flex;
         flex-direction: column;
         
+        
     }    
     .box_left{
+        margin-bottom: 10vh;
+        margin-top: 10vh;
+    }
+
+    .box_right{
         margin-bottom: 10vh;
     }
 }
