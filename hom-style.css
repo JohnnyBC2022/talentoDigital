@@ -112,6 +112,7 @@ background-size: cover;
 background-position: center;
 background-attachment: fixed;
 height: 85vh;
+z-index: -1;
 }
 .main-box{
 max-width: 40%;
@@ -131,7 +132,7 @@ gap: 5vh;
 margin: 2vh 3vh;
 color: var(--white);
 text-align: center;
-font-size: 5vh;
+font-size: 4vh;
 font-family: Rubik;
 }
 .main-btn{
